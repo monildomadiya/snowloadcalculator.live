@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Calculator from "../components/Calculator";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import LocationLinks from "../components/LocationLinks";
 
 export default function Home() {
   // Set up intersection observer for scroll fade-in animations
@@ -251,6 +252,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LocationLinks />
 
       {/* FAQ accordion section */}
       <FAQ />

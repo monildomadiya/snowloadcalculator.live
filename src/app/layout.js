@@ -15,6 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://snowloadcalculator.live'),
   title: "Snow Day Calculator 2025 – Will You Have a Snow Day Tomorrow?",
   description: "Free AI-powered snow day calculator. Enter your ZIP code for an instant, accurate snow day prediction based on real-time weather data. Find out your exact % chance of a snow day tomorrow.",
   keywords: [
@@ -27,6 +28,17 @@ export const metadata = {
     "snow day probability",
     "snow day calculator zip code"
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.png' },
+      new URL('/favicon.png', 'https://snowloadcalculator.live'),
+    ],
+    shortcut: '/favicon.png',
+    apple: '/apple-icon.png',
+  },
+  alternates: {
+    canonical: '/',
+  },
   robots: {
     index: true,
     follow: true,
